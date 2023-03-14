@@ -1,15 +1,15 @@
 {
-  "name": "storybook-addon-kit",
+  "name": "storybook-addon-vue-router",
   "version": "0.0.0",
-  "description": "everything you need to build a Storybook addon",
+  "description": "A Vue router add on, supports Vue3 + and Storybook 7+",
   "keywords": [
-    "storybook-addons"
+    "vue", "router", "storybook-addons"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/storybookjs/storybook-addon-kit"
+    "url": "https://github.com/blowsie/storybook-vue-router/"
   },
-  "author": "package-author",
+  "author": "blowsie <samblowes@hotmail.com>",
   "license": "MIT",
   "exports": {
     ".": {
@@ -39,7 +39,6 @@
     "*.d.ts"
   ],
   "scripts": {
-    "postinstall": "node scripts/welcome.js",
     "clean": "rimraf ./dist",
     "prebuild": "yarn clean",
     "build": "tsup",
@@ -100,9 +99,9 @@
     "access": "public"
   },
   "storybook": {
-    "displayName": "Addon Kit",
+    "displayName": "vue-router",
     "supportedFrameworks": [
-      "supported-frameworks"
+      "vue"
     ],
     "icon": "https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png"
   }
