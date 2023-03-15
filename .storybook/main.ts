@@ -1,4 +1,4 @@
-import type { StorybookConfig } from "@storybook/react-vite";
+import type { StorybookConfig } from "@storybook/vue3-vite";
 const config: StorybookConfig = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)"],
   addons: [
@@ -8,11 +8,11 @@ const config: StorybookConfig = {
     "./local-preset.js",
   ],
   framework: {
-    name: "@storybook/react-vite",
+    name: "@storybook/vue3-vite",
     options: {},
   },
   docs: {
-    autodocs: "tag",
+    autodocs: true,
   },
 };
 export default config;

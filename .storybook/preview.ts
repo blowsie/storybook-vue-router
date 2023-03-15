@@ -1,7 +1,12 @@
-import type { Preview } from "@storybook/react";
+import type { Preview } from "@storybook/vue3";
 
 const preview: Preview = {
   parameters: {
+    options: {
+      storySort: {
+        order: ['README', '*'],
+      },
+    },
     backgrounds: {
       default: "light",
     },
